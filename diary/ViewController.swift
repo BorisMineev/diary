@@ -43,28 +43,3 @@ extension ViewController: JTACMonthViewDelegate {
     
     
 }
-//extension ViewController: JTACMonthViewDelegate, JTACMonthViewDataSource {
-//    func configureCalendar(_ calendar: JTACMonthView) -> ConfigurationParameters {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy MM dd"
-//        formatter.timeZone = Calendar.current.timeZone
-//        formatter.locale = Calendar.current.locale
-//
-//        let startDate = formatter.date(from: "2021 01 01")!
-//        let endDate = formatter.date(from: "2021 12 31")!
-//
-//        let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
-//        return parameters
-//    }
-//
-//    func calendar(_ calendar: JTACMonthView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTACDayCell {
-//        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
-//        cell.dateLabel.text = cellState.text
-//        return cell
-//    }
-//    
-//    func calendar(_ calendar: JTACMonthView, willDisplay cell: JTACDayCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-//        let cell = cell as! CustomCell
-//        cell.dateLabel.text = cellState.text
-//    }
-//}
