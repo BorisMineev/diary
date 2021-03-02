@@ -7,6 +7,7 @@ target 'diary' do
 
   # Pods for diary
   pod 'JTAppleCalendar'
+  pod 'Firebase/Storage'
   
   target 'diaryTests' do
     inherit! :search_paths
