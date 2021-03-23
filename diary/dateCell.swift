@@ -9,5 +9,6 @@ import UIKit
 import JTAppleCalendar
 
 class dateCell: JTACDayCell {
-    @IBOutlet var dateLable: UILabel!
+    @IBOutlet weak var dateLable: UILabel!
+    @IBOutlet weak var eventDotView: UIImageView!
 }
